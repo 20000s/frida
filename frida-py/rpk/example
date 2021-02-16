@@ -1,0 +1,1 @@
+Java.perform(function () {var MainActivity = Java.use('com.example.seccon2015.rock_paper_scissors.MainActivity'); MainActivity.onCreate.implementation = function () { console.log("Hook Start...");var returnValue = this.calc();console.log("Return:"+returnValue);var result = (1000+returnValue)*107;console.log("Flag:"+"SECCON{"+result.toString()+"}");};})
